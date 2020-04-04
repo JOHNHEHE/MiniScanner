@@ -1,0 +1,24 @@
+Metadata-Version: 1.0
+Name: bcolors
+Version: 1.0.2
+Summary: A module for coloring print statement.
+Home-page: UNKNOWN
+Author: ysharma
+Author-email: yks0000@gmail.com
+License: GPL
+Description: Setting Text ForeGround Color. This can be used with Print Statement.
+        
+        Eg:
+        
+        Python3.x:
+        
+        import bcolors as b
+        print(b.OK + "Color Statement" + b.END)
+        
+        
+        Python2.x:
+        
+        import bcolors as b
+        print b.OK + "Color Statement" + b.END
+Platform: Linux
+Platform: OSX

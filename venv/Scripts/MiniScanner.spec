@@ -1,0 +1,37 @@
+# -*- mode: python ; coding: utf-8 -*-
+
+block_cipher = None
+
+
+a = Analysis(['G:\\project for python\\MiniScanner\\MiniScanner.py','G:\\project for python\\MiniScanner\\plugins\\Crawl\\web_crawl.py','G:\\project for python\\MiniScanner\\plugins\\Scan\\active_scan.py','G:\\project for python\\MiniScanner\\plugins\\Scan\\port_scan.py','G:\\project for python\\MiniScanner\\plugins\\Scan\\os_scan.py','G:\\project for python\\MiniScanner\\lib\\output.py','G:\\project for python\\MiniScanner\\lib\\random_header.py','G:\\project for python\\MiniScanner\\lib\\requests.py','G:\\project for python\\MiniScanner\\lib\\sql.py'],
+             pathex=['G:\\project for python\\MiniScanner\\venv\\Scripts'],
+             binaries=[],
+             datas=[('G:\\project for python\\MiniScanner\\plugins\\Crawl','plugins\\Crawl'),('G:\\project for python\\MiniScanner\\plugins\\Scan','plugins\\Scan')],
+             hiddenimports=[],
+             hookspath=[],
+             runtime_hooks=[],
+             excludes=[],
+             win_no_prefer_redirects=False,
+             win_private_assemblies=False,
+             cipher=block_cipher,
+             noarchive=False)
+pyz = PYZ(a.pure, a.zipped_data,
+             cipher=block_cipher)
+exe = EXE(pyz,
+          a.scripts,
+          [],
+          exclude_binaries=True,
+          name='MiniScanner',
+          debug=False,
+          bootloader_ignore_signals=False,
+          strip=False,
+          upx=True,
+          console=True )
+coll = COLLECT(exe,
+               a.binaries,
+               a.zipfiles,
+               a.datas,
+               strip=False,
+               upx=True,
+               upx_exclude=[],
+               name='MiniScanner')
