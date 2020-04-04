@@ -4,7 +4,7 @@
 ## 如何使用
 本系统运行在操作系统Microsoft Windows 10上，针对更低版本的Microsoft Windows系统，未经过测试，尚不清楚运行状况。
 
-系统采用JetBrains PyCharm进行编写，版本为Community Edition 2019.2.2 x64，编程语言使用python，版本为3.7.3，对于使用本系统的用户来说，建议使用3.6以上版本python，不支持2.x版本python。同时本系统的系统检测功能使用了nmap模块，该模块的正常运行需要用户安装Nmap，下载地址为：https://nmap.org/，下载完成后请将Nmap安装在D盘，并检查D:/Nmap/目录下有文件nmap.exe（若将Nmap安装在其他路径，请拷贝nmap.exe所在路径，在MiniScanner\venv\Lib\site-packages\nmap\namp.py中的nmap_search_path中添加该路径）。
+系统采用JetBrains PyCharm进行编写，版本为Community Edition 2019.2.2 x64，编程语言使用python，版本为3.7.3，对于使用本系统的用户来说，建议使用3.6以上版本python，不支持2.x版本python。同时本系统的系统检测功能使用了nmap模块，该模块的正常运行需要用户安装Nmap，下载完成后请将Nmap安装在D盘，并检查D:/Nmap/目录下有文件nmap.exe（若将Nmap安装在其他路径，请拷贝nmap.exe所在路径，在MiniScanner\venv\Lib\site-packages\nmap\namp.py中的nmap_search_path中添加该路径），Nmap下载地址为：https://nmap.org/
 
 建议在Python IDE上使用本系统，运行MiniScanner.py即可启动本系统，在运行窗口输入提示命令使用相应功能。
 
